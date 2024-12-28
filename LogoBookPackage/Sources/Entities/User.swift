@@ -1,16 +1,16 @@
 import Foundation
 
-public struct User: Codable, Identifiable {
-  public var id = UUID()
-
+public struct User: Codable {
+  public let userID: String
   public let name: String
   public let thumbnailURL: String
   
   enum CodingKeys: String, CodingKey {
-    case name, thumbnailURL
+    case userID, name, thumbnailURL
   }
 
-  public init(name: String, thumbnailURL: String) {
+  public init(userID: String = "", name: String, thumbnailURL: String) {
+    self.userID = userID
     self.name = name
     self.thumbnailURL = thumbnailURL
   }

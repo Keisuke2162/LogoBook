@@ -18,7 +18,13 @@ let package = Package(
       .target(name: "Entities"),
       .target(name: "Extensions"),
       .target(name: "Features"),
-      .target(name: "Repositories"),
+      .target(name: "Repositories",
+              dependencies: [
+                "Entities",
+                "Extensions",
+                .product(name: "FirebaseFirestore", package: "firebase-ios-sdk"),
+                .product(name: "FirebaseStorage", package: "firebase-ios-sdk"),
+              ]),
       .target(name: "UseCases"),
     ]
 )
