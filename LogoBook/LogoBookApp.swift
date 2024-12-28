@@ -1,5 +1,5 @@
 import SwiftUI
-import SwiftData
+import Features
 
 @main
 struct LogoBookApp: App {

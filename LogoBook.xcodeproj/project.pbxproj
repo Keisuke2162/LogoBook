@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6702FB142D20AF2700CAAA61 /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = 6702FB132D20AF2700CAAA61 /* Features */; };
+		67AC87E52D20AD0900F37CDD /* LogoBookPackage in Resources */ = {isa = PBXBuildFile; fileRef = 67AC87E42D20AD0900F37CDD /* LogoBookPackage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		67AC87B62D20A4A600F37CDD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,22 +32,13 @@
 		67AC87A32D20A4A500F37CDD /* LogoBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AC87B52D20A4A600F37CDD /* LogoBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AC87BF2D20A4A600F37CDD /* LogoBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AC87E42D20AD0900F37CDD /* LogoBookPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LogoBookPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		67AC87A52D20A4A500F37CDD /* LogoBook */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = LogoBook;
-			sourceTree = "<group>";
-		};
-		67AC87B82D20A4A600F37CDD /* LogoBookTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LogoBookTests;
-			sourceTree = "<group>";
-		};
-		67AC87C22D20A4A600F37CDD /* LogoBookUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LogoBookUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6702FB142D20AF2700CAAA61 /* Features in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6702FB122D20AF2700CAAA61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67AC879A2D20A4A500F37CDD = {
 			isa = PBXGroup;
 			children = (
 				67AC87A52D20A4A500F37CDD /* LogoBook */,
-				67AC87B82D20A4A600F37CDD /* LogoBookTests */,
-				67AC87C22D20A4A600F37CDD /* LogoBookUITests */,
 				67AC87A42D20A4A500F37CDD /* Products */,
+				67AC87E42D20AD0900F37CDD /* LogoBookPackage */,
+				6702FB122D20AF2700CAAA61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +116,7 @@
 			);
 			name = LogoBook;
 			packageProductDependencies = (
+				6702FB132D20AF2700CAAA61 /* Features */,
 			);
 			productName = LogoBook;
 			productReference = 67AC87A32D20A4A500F37CDD /* LogoBook.app */;
@@ -129,9 +134,6 @@
 			);
 			dependencies = (
 				67AC87B72D20A4A600F37CDD /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				67AC87B82D20A4A600F37CDD /* LogoBookTests */,
 			);
 			name = LogoBookTests;
 			packageProductDependencies = (
@@ -152,9 +154,6 @@
 			);
 			dependencies = (
 				67AC87C12D20A4A600F37CDD /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				67AC87C22D20A4A600F37CDD /* LogoBookUITests */,
 			);
 			name = LogoBookUITests;
 			packageProductDependencies = (
@@ -212,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AC87E52D20AD0900F37CDD /* LogoBookPackage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +558,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6702FB132D20AF2700CAAA61 /* Features */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Features;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67AC879B2D20A4A500F37CDD /* Project object */;
 }
